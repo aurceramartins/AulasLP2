@@ -9,9 +9,9 @@ namespace MyFornite
             FNPlayer player1 = new FNPlayer();
             FNPlayer player2 = new FNPlayer(100, 50);
 
-            Console.WriteLine("O p2 ten agora " + player2.health);
+            Console.WriteLine("O p2 ten agora " + player2.GetHealth());
             player1.Attack(player2);
-            Console.WriteLine("O p2 ten agora " + player2.health);
+            Console.WriteLine("O p2 ten agora " + player2.GetHealth());
 
         }
     }
