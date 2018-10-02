@@ -7,8 +7,8 @@ namespace MyFornite
     class FNPlayer
     {
 
-        public int Ammo{get; private set;}
-        public float Health { get; private set;}
+        public int Ammo { get; private set; }
+        public float Health { get; private set; }
 
         public FNPlayer()
         {
@@ -18,7 +18,7 @@ namespace MyFornite
         public FNPlayer(int ammo, float health)
         {
             Ammo = ammo;
-            SetHealth(health);
+            Health = health;
         }
 
         public float Attack(FNPlayer enemy)
@@ -31,17 +31,7 @@ namespace MyFornite
         {
             Health -= damage;
         }
-        public float GetHealth()
-        {
-            return Health;
-        }
-        public void SetHealth(float health)
-        {
-            if(health <=100 && health > 0)
-            {
-                Health = health;
-            }
-        }
+
 
     }
 }
