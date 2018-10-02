@@ -6,8 +6,20 @@ namespace MyFornite
 {
     class FNPlayer
     {
+
         public int ammo;
         public float health;
+
+        public FNPlayer()
+        {
+
+        }
+
+        public FNPlayer(int ammo, float health)
+        {
+            this.ammo = ammo;
+            this.health = health;
+        }
 
         public float Attack(FNPlayer enemy)
         {
@@ -15,7 +27,7 @@ namespace MyFornite
             enemy.TakeDamage(damage);
             return 0;
         }
-        public void  TakeDamage(float damage)
+        public void TakeDamage(float damage)
         {
             health -= damage;
         }
